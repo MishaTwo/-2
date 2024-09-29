@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{%block title%} Registration {%endblock%}
+
+{% block content %}
+<div class="registr">
+<h2>Зареєструватися</h2>
+<form method="POST" action="/registration">
+        {{form.hidden_tag()}}
+        {{form.username.label}}
+        {{form.username}}<br>
+        {{form.email.label}}
+        {{form.email}}<br>
+        {{form.password.label}}
+        {{form.password}}<br>
+        {{form.submit()}}
+</form>
+<a href="https://support.google.com/accounts/answer/185833?hl=en">Як отримати пароль</a>
+<div class="new_options">
+    <h4>Що дає реєстрація</h4>
+    <b> 1. Ви отримаєте всі<br>
+        функції розсилки
+        </b><br>
+
+    <b> 2. Ви отримаєте<br>
+        доступ до новин!</b><br>
+
+    <b> 3. Ви отримаєте<br>
+        доступ до довідника, який<br>
+        має допомогоати вам у роботі</b><br>
+</div>
+</div>
+{%endblock%}

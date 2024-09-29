@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{%block title%} Directory {%endblock%}
+
+
+{%block content%}
+        <form action="/directory" method="post">
+            <label for="name">Name: </label>
+            <input type="text" name="name"><br>
+            <label for="surname">Surname: </label>
+            <input type="text" name="surname"><br>
+            <label for="email">Email: </label>
+            <input type="text" name="email"><br>
+            <label for="file">File: </label>
+            <input type="file" name="file"><br>
+            <button type="submit">Submit</button><br>
+            
+            <div class="directory">
+            {% if current_user.is_authenticated %}
+            <table>
+                <tr>
+                    <td>Ім'я</td>
+                    <td>Прізвище</td>
+                    <td>Емейл</td>
+                    <td>Файл</td>
+                </tr>
+                {% for directory in all_dir %}
+                    {% if current_user.id == directory.uid %}
+                            <tr>
+                                <td>{{directory.name}} </td>
+                                <td>{{directory.surname}} </td>
+                                <td>{{directory.email}} </td>
+                                <td>{{directory.file}} </td><br>
+                            </tr>
+                    {%endif%}
+                {%endfor%}
+            </table>
+            {%endif%}
+            </div>
+        </form>
+{%endblock%}

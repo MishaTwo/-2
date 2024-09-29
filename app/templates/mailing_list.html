@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{%block title%} Mailing {%endblock%}
+
+
+
+{% block content %}
+        <form action="/mailing" method="post">
+        <label for="folder_path">Enter a folder:</label>
+        <input type="text" id="folder_path" name="folder_path"><br>
+        <label for="file_path">Enter a file:</label>
+        <input type="text" id="file_path" name="file_path"><br>
+        <label for="file_column">Enter a  file column:</label>
+        <input type="number" id="file_column" name="file_column"><br>
+        <label title="email_column">Enter a  email column:</label>
+        <input type="number" id="email_column" name="email_column"><br>
+        <label for="Title">Enter a title:</label>
+        <input type="text" id="title" name="title"><br>
+        <button type="submit">Send</button>
+
+        </form>
+                
+        {% if not current_user.is_authenticated %}
+            <a>In order to start using the newsletter, you need to register</a>
+        {%endif%}
+
+    <div class="mailing">
+    
+    </div>
+{%endblock%}
