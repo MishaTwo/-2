@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{%block title%} Реєстрація {%endblock%}
+
+{% block content %}
+<div class="registr">
+<h2>Зареєструватися</h2>
+<form method="POST" action="/registration">
+        {{form.hidden_tag()}}
+        {{form.username.label}}
+        {{form.username}}<br>
+        {{form.email.label}}
+        {{form.email}}<br>
+        {{form.password.label}}
+        {{form.password}}<br>
+        {{form.submit()}}
+</form>
+<a href="https://support.google.com/accounts/answer/185833?hl=en">Як отримати пароль для Gmail</a><br>
+<a href="https://accounts.ukr.net/settings/app-passwords?uid=0&client_id=9GLooZH9KjbBlWnuLkVX&lang=uk&theme=default&sourceservice=mailweb">Як отримати пароль для Укрнет</a><br>
+<div class="new_options">
+    <h4>Що дає реєстрація</h4>
+    <b> 1. Ви отримаєте всі<br>
+        функції розсилки
+        </b><br>
+
+    <b> 2. Ви отримаєте<br>
+        доступ до новин!</b><br>
+
+    <b> 3. Ви отримаєте<br>
+        доступ до довідника, який<br>
+        має допомогоати вам у роботі</b><br>
+</div>
+</div>
+{%endblock%}

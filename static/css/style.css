@@ -1,0 +1,145 @@
+.container{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0,0,0,0.5)), url("img/image.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    max-width: 100%;
+    display: flex;
+    height: 800px;
+    margin: 0px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+label{
+    font-family: 'Times New Roman', Times, serif;
+    font-size:larger;
+    font-size: large;
+    cursor: pointer;
+}
+
+input{
+    font-size:medium;
+    border-radius: 10px;
+    border-color: black;
+}
+
+.centr_button button{
+    background-color:blue;
+    color: white;
+    padding: 20px 40px;
+    border-radius: 20px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 200px;
+    font-size: 18px;
+}
+
+.centr_button{
+    text-align: center;
+    justify-content: center;
+}
+
+.mailing{
+    background-image: url("img/image2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    height: 800px;
+    margin-top: 200px;
+    background-position: center;
+    left: 1500;
+}
+
+.mailing label{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(0, 0, 0);
+}
+
+.mailing button{
+    background-color: cornflowerblue;
+    border-radius: 15px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    padding: 5px 25px;
+}
+
+img{
+    width: 500px;
+    height: 300px;
+}
+
+.directory{
+    margin-top: 0;
+    text-align: center;
+}
+
+.directory table{
+    border-radius: 5px;
+    border-width: 5px;
+    border-style: solid;
+    border-collapse: collapse;
+    border-color: black;
+    padding: 10px, 15px;
+}
+
+.directory td{
+    border: 3px solid black;
+    padding: 10px 15px;
+    text-align: left;
+}
+
+.new_options{
+    margin-left: 450px;
+    position: absolute;
+    top: 60px;
+}
+
+.main .registr{
+    max-width: 400px;
+    background-color: rgb(145, 145, 145);
+    padding: 20px;
+    border-radius: 10px;
+    width: auto;
+}
+
+.main .news{
+    max-width: 700px;
+    background-color: rgb(145, 145, 145);
+    padding: 20px;
+    border-radius: 10px;
+    width: auto;
+}
+
+.main .login{
+    max-width: 400px;
+    background-color: rgb(145, 145, 145);
+    padding: 20px;
+    border-radius: 10px;
+    width: auto;
+}
+
+.main .add_news{
+    max-width: 400px;
+    background-color: rgb(145, 145, 145);
+    padding: 20px;
+    border-radius: 10px;
+    width: auto;
+}
+
+.main .directory{
+    text-align: left;
+    max-width: 700px;
+    background-color: rgb(145, 145, 145);
+    padding: 20px;
+    border-radius: 10px;
+    width: auto;
+}
